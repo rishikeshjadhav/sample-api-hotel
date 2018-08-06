@@ -1,0 +1,23 @@
+<div class="login-wrapper">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 no-padding">
+            <label class="location">ABCD :</label>
+            <p-dropdown [options]="uniqueCities" placeholder="Select City" class="select-leave-type"></p-dropdown>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 login-box">
+            <div class="credentials-wrapper">
+                <h3>Sign in</h3>
+                <div class="username-wrapper">
+                    <input id="name" name="name" type="text" required [(ngModel)]="username">
+                    <label for="name" (clickOutside)="onClickedOutside()" [class.visibility-hidden]="clickedOutside">Email</label>
+                </div>
+                <footer>
+                    <button pButton type="button" label="Next" class="active-btn orange-btn" (click)="getUserDomainDetails()">
+                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </button>
+                </footer>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

@@ -1,1 +1,587 @@
-/* You can add global styles to this file, and also import other style files */
+/* common */
+body.config-body-bg{
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	background-color: #eae8e8;
+}
+.container-fluid{
+	/* max-width: 980px; */
+	margin: 0 auto;
+	padding: 0 !important;
+}
+#wrapper {
+    padding-top: 70px;
+}
+.middle-content {
+	background: #fff;
+	border-radius: 2px;
+	border-right: 1px solid #e4e4e4;
+}
+.welcome-wrapper .inner-wrapper h5 {
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+.welcome-wrapper {
+    padding: 10px 0 0 5px;
+}
+a{
+	vertical-align: middle;
+}
+.inline-block{
+	display: inline-block;
+	vertical-align: top;
+	width: 70%;
+}
+/* welcome screen */
+.welcome-bg {
+    height: 160px;
+    background-position: 50% 25%;
+}
+.welcome-content {
+    text-align: center;
+    margin: 15px 10px;
+}
+.welcome-content p.thank-you{
+	color: #195ea2;    
+    font-size: 15px;
+	margin-bottom: 0;
+	line-height: 21px;
+}
+.configuration-content{
+	margin: 26px 10px;
+	padding: 5px;
+}
+.configuration-content p.config-info {
+	font-size: 12px;
+	margin-bottom: 0;
+	line-height: 21px;
+	color: #525252;
+}
+.configuration-content p.config-wizard {
+	font-size: 11px;
+	margin: 10px 0;
+	line-height: 21px;
+	color: #444444;
+}
+.config-steps {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.config-steps li {
+	float: left;
+	list-style-type: none;
+	width: 33.33333333%;
+	text-align: center;
+	margin: 10px 0;
+	padding: 5px 0 0;
+}
+.config-steps li img {
+	height: 46px;
+}
+.config-steps li span {
+	display: block;
+	text-transform: uppercase;
+	font-size: 11px;
+	margin: 7px 0px;
+	font-weight: 600;
+}
+/* welcome screen */
+
+/* form controls */
+.middle-content .ui-inputtext{
+	vertical-align: middle;
+}
+.middle-content .ui-inputtext:focus{
+	box-shadow: 0px 0px 5px #c0c0c0;
+}
+.middle-content .ui-radiobutton-box {
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    border-radius: 100%;
+	text-align: center;
+	border: 1px solid #8c8c8c;
+}
+.middle-content .ui-radiobutton-box.ui-state-active{
+	border: 1px solid #d0d0d0;
+    background: #dedede;
+	color: #828282;
+}
+textarea{
+	border-radius: 0 !important;
+	font-size: 12px !important;
+	resize: none;
+}
+.toggle-switch input:checked + .slider{
+	background-color: #db4c3f;
+}
+.toggle-switch .ui-togglebutton.ui-button.ui-state-active{
+	border: 1px solid #db4c3f;
+    background: #db4c3f;
+}
+.toggle-switch .ui-togglebutton.ui-button.ui-state-focus{
+	box-shadow: 0 0 5px #db4c3f;
+}
+.middle-content .ui-fileupload-content{
+	padding: 0;
+}
+.middle-content .ui-fileupload-row > div{
+	padding: 5px 12px;
+}
+.middle-content .ui-fileupload-buttonbar .ui-button, .middle-content .ui-fileupload-buttonbar .ui-button:hover{
+	border: 1px solid #db4c3f !important;
+	background: #db4c3f !important;
+}
+.ui-fileupload-row > div:nth-child(1){
+	display: none;
+}
+.middle-content .ui-fileupload-row > div:nth-child(2){
+	max-width: 300px;
+}
+.middle-content .ui-fileupload-row > div:nth-child(3){
+	width: 95px;
+}
+.middle-content .ui-widget-content .ui-button, .middle-content .ui-widget-content .ui-button:hover{
+	border: 1px solid #616161;
+	background: #fff;
+}
+.middle-content .ui-widget-content .ui-button .fa-close:before{
+	color: #616161;
+}
+.middle-content .ui-widget-content .ui-button[icon="fa-close"]:hover{
+	background-color: #616161;
+	color: #fff;
+	border-color: #616161;
+}
+.middle-content .ui-widget-content .ui-button[icon="fa-close"]:hover .fa-close:before{
+	color: #fff;
+}
+/* form controls */
+
+.pointer {
+	cursor: pointer;
+}
+.middle-content .padding-left-5{
+	padding-left: 5px;
+}
+.middle-content .padding-right-5{
+	padding-right: 5px;
+}
+.middle-content .margin-top-5{
+	margin-top: 5px;
+}
+.top-bar{
+	/* background-color: #db4c3f; */
+	height: 70px;
+	position: fixed;
+    top: 0;
+    width: 100%;
+	z-index: 99;
+}
+
+.colon{
+	margin: 0 10px;
+}
+.page-title{
+	font-weight: normal;
+    color: #2f5582;
+    margin-bottom: 20px;
+	text-transform: capitalize;
+}
+.page-title i{
+	font-size: 25px;
+    margin-right: 15px;
+	color: #00a0d2;
+}
+.margin-top-10{
+	margin-top: 10px;
+}
+.margin-right-10{
+	margin-right: 10px;
+}
+.margin-left-5{
+	margin-left: 5px;
+}
+.margin-left-10{
+	margin-left: 10px;
+}
+.margin-bottom-10{	
+	margin-bottom: 10px;
+}
+.padding-left-1{
+	padding-left: 1px;
+}
+.padding-right-1{
+	padding-right: 1px;
+}
+
+.padding-50 {
+	padding: 50px;
+}
+.no-padding{
+	padding: 0 !important;
+}
+.inner-wrapper .no-padding-left{
+	padding-left: 0;
+}
+.inner-wrapper .no-padding-right{
+	padding-right: 0;
+}
+.no-margin{
+	margin: 0 !important;
+}
+.no-margin-left{
+	margin-left: 0 !important;
+}
+.no-margin-right{
+	margin-right: 0 !important;
+}
+.no-bg{
+	background: none !important;
+}
+.no-border{
+	border: none !important;
+}
+.vTop{
+	vertical-align: top;
+}
+#sidebar-wrapper .top-section ul.top-ul ul.sub-top-ul.top-15 {
+	top: 0;
+}
+.table{
+	margin-bottom: 0;
+}
+.table > thead > tr > th{
+	background: transparent;
+    color: #999;
+    font-weight: normal;
+    font-size: 13px !important;
+	border-bottom: 1px solid #e8e8e8 !important;
+}
+.table > tbody > tr > td{
+	font-size: 13px;
+	vertical-align: middle !important;
+	padding: 9px 5px !important;
+}
+.table > tbody > tr:nth-child(odd){
+	background-color: #fff;
+}
+.table > tbody > tr:nth-child(even){
+	background-color: #eee;
+}
+.table > tbody > tr > td input.datepicker{
+	background-size: 23px;
+	font-size: 12px;
+}
+.table > tbody > tr > td input[type="radio"]{
+	position: relative;
+}
+/*i{
+	margin-right: 5px;
+}*/
+.title-wrapper{
+	border-bottom: 1px solid #ececec;
+}
+.breadcrumb{
+	margin: 0;
+	background-color: #fff;
+}
+.breadcrumb > li{
+	text-transform: capitalize;
+}
+.breadcrumb > li + li:before {
+    content: "\00bb";
+    padding: 0 7px;
+    color: #7b7b7b;
+    font-size: 17px;
+    line-height: 0;
+    font-weight: 600;
+}
+.breadcrumb > li > a{
+	color: #333;
+	text-decoration: none;
+	font-size: 20px;
+}
+/* .actions i{
+	color: #828282;
+    font-size: 14px;
+} */
+.table > tbody > tr > td .checkbox-inline input[type="checkbox"]{
+	position: relative;
+	margin: 0;
+	vertical-align: middle;
+}
+.center{
+	text-align: center; 
+}
+.fix-tablelayout{
+	table-layout: fixed;
+}
+.table input.form-control{
+	height: 20px;
+    border-radius: 0;
+    padding: 5px;
+}
+.other-apps{
+	margin-top: 30px;
+}
+.other-apps ul{
+	padding: 0px 40px;
+}
+.other-apps ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 63px;
+    text-align: center;
+    width: auto;
+}
+.other-apps ul li:last-child{
+	margin-right: 0;
+}
+.other-apps ul li a p{
+	font-size: 10px;
+    text-transform: uppercase;
+    margin: 3px 0 0;
+    color: #5f5f5f;
+    font-weight: 600;
+}
+.other-apps ul li a{
+	text-decoration: none;
+}
+.auto-width{
+	width: auto !important;
+}
+.font-normal{
+	font-weight: normal;
+}
+.ellipsis{
+	display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+
+
+/*loader*/
+.loader {
+    background: #fff;
+    opacity: 0.8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+	width: 100%;
+	z-index: 9998;
+    text-align: center;
+    color: #333;
+}
+
+.loader i {
+	color: #0073c6;
+	position: fixed;
+	left: 49%;
+	top: 49%;
+	font-size: 30px;
+	animation: 700ms steps(50, end) 0s normal none infinite running fa-spin;
+}
+/* loader */
+/* common */
+
+/* for mandatory Field*/
+.mandatory{
+	margin-left: 2px;
+    font-size: 15px;
+    color: #ff1919;
+    display: inline-block;
+}	
+/* for mandatory Field*/
+
+/* For No item found */
+.noitemfound{
+	font-size: 14px;
+    color: #5f5f5f;
+    font-style: normal;
+    text-align: center;
+    margin: 40px 0;
+}
+.noitemfound p{
+	display: inline-block;
+    background: #db4c3f;
+    margin: 0;
+    padding: 2px 5px;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #db4c3f;
+}
+/* For No item found */
+
+input.form-control[disabled]{
+	background: #fff;
+    opacity: 0.55;
+}
+/* common for p-dialog */
+p-dialog{
+    text-align: left;
+}
+p-dialog .ui-dialog.ui-widget .ui-dialog-titlebar .ui-dialog-title{
+    font-family: "Roboto", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	vertical-align: middle;
+	text-transform: capitalize;
+}
+p-dialog .ui-dialog.ui-widget .ui-dialog-titlebar{
+	padding: 5px 10px;
+}
+p-dialog .ui-dialog .ui-dialog-titlebar-icon{
+	margin-top: 3px;
+}
+p-dialog .ui-dialog.ui-widget .ui-dialog-content{
+	padding: 15px 10px;
+}
+p-dialog .ui-dialog-footer{
+	padding: 7px 12px;
+	border-top: 1px solid #e6e6e6;
+}
+p-dialog .ui-dialog.ui-widget .ui-dialog-content p{
+	margin: 0;
+	font-size: 13px;
+} 
+p-dialog .ui-dialog, app-raise-leave p-dialog .ui-dialog{
+	border: none;
+}
+/* common for p-dialog */
+
+/*for grid*/
+p-datatable .ui-datatable .ui-datatable-thead > tr > th{
+	font-size: 13px;
+	background: #f7f7f7;
+	border: 0;
+	text-align: left;
+	color: #7d7d7d;
+	padding: 5px;
+}
+p-datatable .ui-datatable .ui-widget-content{
+	border: none;
+	border-color: #e8e8e8 !important; 
+}
+p-datatable .ui-datatable tbody > tr.ui-widget-content:nth-child(odd){
+	background: #ffffff;
+	color: #333333;
+}
+p-datatable .ui-datatable tbody > tr.ui-widget-content:nth-child(even){
+	background: #eee;
+}
+p-datatable .ui-datatable .ui-datatable-data > tr > td{
+	border-left: none;
+	border-right: none;
+	padding: 9px 5px;
+	font-size: 13px;
+}
+/*for grid*/
+
+/* footer and footer btns */
+footer {
+	text-align: right;
+	margin: 12px 0 0;
+}
+.welcome-wrapper footer .active-btn, .login-wrapper footer .active-btn, .actions-wrapper footer .active-btn, 
+footer.alert-footer .active-btn{
+	color: #fff;
+	text-transform: capitalize;
+	border-radius: 3px;
+	border: none;
+	box-shadow: 0px 0px 2px #c1c1c1;
+	padding: 4px 10px;
+	font-size: 12px; 
+	font-weight: normal;
+	margin-right: 5px;
+}
+.middle-content footer button:last-child{
+	margin-right: 0;
+}
+.middle-content footer button[label='take me to appmap']{
+	margin-right: 5px;
+}
+.welcome-wrapper footer .active-btn.orange-btn, .welcome-wrapper footer .active-btn.orange-btn:hover, .welcome-wrapper footer .active-btn.orange-btn:active,
+.login-wrapper footer .active-btn.orange-btn, .login-wrapper footer .active-btn.orange-btn:hover, .login-wrapper footer .active-btn.orange-btn:active,
+.actions-wrapper footer .active-btn.orange-btn, .actions-wrapper footer .active-btn.orange-btn:hover, .actions-wrapper footer .active-btn.orange-btn:active,
+footer.alert-footer .active-btn.orange-btn, footer.alert-footer .active-btn.orange-btn:hover, footer.alert-footer .active-btn.orange-btn:active
+{
+	background: #db4c3f;
+	border: 1px solid #db4c3f;
+}
+footer .active-btn.grey-btn, ::ng-deep footer.alert-footer .active-btn.grey-btn{
+	border: 1px solid #616161;
+    color: #616161;
+	background: #fff;
+}
+.welcome-wrapper footer .active-btn.grey-btn:hover, .welcome-wrapper footer .active-btn.grey-btn:active, .welcome-wrapper footer .active-btn.grey-btn:focus,
+.actions-wrapper footer .active-btn.grey-btn:hover, .actions-wrapper footer .active-btn.grey-btn:active,  .actions-wrapper footer .active-btn.grey-btn:focus,
+footer.alert-footer .active-btn.grey-btn:hover, footer.alert-footer .active-btn.grey-btn:active, footer.alert-footer .active-btn.grey-btn:focus
+{
+	background: #8e8e8e;
+	color: #fff;
+	border: 1px solid #616161;
+}
+footer .ui-button-text{
+	display: inline-block !important;
+	padding: 0 !important;
+}
+/* footer */
+
+/* media queries */
+@media screen and (min-width: 480px) and (max-width: 960px){
+	#wrapper{	
+		width: 100%;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	.setup-your-config .custom-nav-tabs > li > a, .setup-your-config .custom-nav-tabs > li > a:hover, .setup-your-config .custom-nav-tabs > li > a:focus{
+		width: 70px;
+		height: 70px;
+		font-size: 10px;
+		text-transform: capitalize;
+	}
+	.setup-config-steps {
+		padding: 10px 60px 0;
+	}
+	.pincode{
+		margin-right: 4px;
+	}
+}
+@media only screen and (width: 1366px){
+	.setup-your-config .custom-nav-tabs > li > a, .setup-your-config .custom-nav-tabs > li > a:hover, .setup-your-config .custom-nav-tabs > li > a:focus{
+		width: 80px;
+		height: 80px;
+		font-size: 9px;
+		text-transform: uppercase;
+	}
+	.setup-config-steps {
+		padding: 10px 100px 0;
+	}
+	.error-msg-wrapper {
+		padding: 5px 85px;
+	}
+	.pincode, .password, .smtp{
+		margin-right: 9px;
+	}
+}
+
+/* .router-outlet-style{
+	margin-left: 400px;
+} */
+
+/* @media screen and (min-width: 768px) and (max-width: 1366px) and (orientation : landscape){
+	.middle-content{
+		height: 725px !important;
+	}	
+} */
+/* @media screen and (min-width: 768px) and (max-width: 1366px) and (orientation : portrait){
+	.middle-content{
+		height: 1366px;
+	}
+} */
+/* media queries */
+
+
